@@ -3,7 +3,7 @@ import { connect, styled } from "frontity";
 
 const Home = () => (
   <Container>
-    <Title> Hello World!</Title>
+    <Title> || Hello World!</Title>
     <Text>
       My name is Catalina and I'm a developer at
       <Link href="https://lambdaclass.com/">{` LambdaClass `}</Link>
@@ -41,8 +41,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-Container: center;
-  margin: 7em 5em;
+  margin: 7em 10em;
 `;
+  // background-image: url("../assets/pattern.svg");
 
 const Title = styled.div`
   margin: 1em 0;
@@ -54,6 +55,6 @@ const Text = styled.p`
 `;
 
 const Link = styled.a`
-  color: blue;
+  color: #09516e;
   text-decoration: none;
 `;

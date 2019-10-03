@@ -11,10 +11,10 @@ const Nav = ({ state }) => (
         <Link link={link}>{name}</Link>
       </Item>
     ))}
-    <Logos>
+    
       <a href="https://github.com/catalinasy/"><img src={GithubLogo}/></a>
       <a href="https://www.linkedin.com/in/catalina-syddall-93647411b/"><img src={LinkedinLogo}/></a>
-    </Logos>
+    
   </Container>
 );
 
@@ -29,13 +29,8 @@ const Container = styled.nav`
   padding: 0 24px;
   margin: 0;
   overflow-x: auto;
-  width: 25%;
+  
 `;
-
-
-const Logos = styled.div`
-  display: flex;
-  `
 
 const Item = styled.div`
   padding: 0;

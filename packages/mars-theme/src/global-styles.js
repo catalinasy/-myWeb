@@ -5,6 +5,8 @@ const globalStyles = css`
     margin: 0;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
+    background-image: url("../assets/pattern.png");
+
   }
   a {
     text-decoration: none;
@@ -20,5 +22,6 @@ const globalStyles = css`
     padding: 0 0.5em;
   }
 `;
+
 
 export default globalStyles
