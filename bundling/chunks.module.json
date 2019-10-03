@@ -1,0 +1,74 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.41.0",
+  "hash": "e8f0e22cf8a404f08727",
+  "publicPath": "/static/",
+  "outputPath": "/Users/catalina/acamica/cata-site/build/static",
+  "assetsByChunkName": {
+    "my-web": "my-web.module.js"
+  },
+  "assets": [
+    {
+      "name": "images/githubLogo.png",
+      "size": 1714,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/linkedinLogo.png",
+      "size": 784,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "my-web.module.js",
+      "size": 3523636,
+      "chunks": [
+        "my-web"
+      ],
+      "chunkNames": [
+        "my-web"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "my-web": {
+      "chunks": [
+        "my-web"
+      ],
+      "assets": [
+        "my-web.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "my-web": {
+      "chunks": [
+        "my-web"
+      ],
+      "assets": [
+        "my-web.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
