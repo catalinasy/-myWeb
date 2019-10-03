@@ -1,36 +1,16 @@
 import React from "react";
-import { Global, css, connect, styled, Head } from "frontity";
+import { Global, connect, styled, Head } from "frontity";
 import Header from "./header";
 import Page404 from "./page404.js";
-import Home from './home'
-import Cv from "./Cv";
+import Home from "./home";
+import Cv from "./cv";
 
-const globalStyles = css`
-  body {
-    @import url('https://fonts.googleapis.com/css?family=Oswald|Special+Elite&display=swap');
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-  }
-  a{
-  text-decoration: none;
-  color: black;
-  }
-  a:visited{
-  text-decoration: none;
-
-  }
-  a:hover{
-    color: red;
-  }
-  img{
-    padding: 0 0.5em;
-  }
-`;
+import globalStyles from "../global-styles"
 
 const Theme = ({ state }) => {
-  const data = state.source.get(state.router.link);
-  const {link} = state.router
+  const { link } = state.router;
+  const data = state.source.get(link);
+  
   return (
     <>
       <Head>
@@ -42,17 +22,15 @@ const Theme = ({ state }) => {
         <Header />
       </HeadContainer>
       <Body>
-        {link ==="/" && <Home />}
+        {link === "/" && <Home />}
         {link === "/cv/" && <Cv />}
-        {data.is404 && <Page404/>}
+        {data.is404 && <Page404 />}
       </Body>
     </>
   );
 };
 
 export default connect(Theme);
-
-
 
 const HeadContainer = styled.div`
   display: flex;
@@ -68,7 +46,3 @@ const Body = styled.div`
   align-items: center;
   background-color: white;
 `;
-
-// const Title = styled.h2`
-//   font-family: 'Special Elite', cursive;
-// `

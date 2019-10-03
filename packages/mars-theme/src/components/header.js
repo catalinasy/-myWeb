@@ -4,18 +4,17 @@ import Link from "./link";
 import Nav from "./nav";
 
 const Header = ({ state }) => {
- console.log({state})
   return (
     <FlexContainer>
-    <Container>
-      <StyledLink link="/">
-        <Title>{state.frontity.title}</Title>
-      </StyledLink>
-    </Container>
-    <Nav />
-  </FlexContainer>
-  )
-}
+      <Container>
+        <StyledLink link="/">
+          <Title>{state.frontity.title}</Title>
+        </StyledLink>
+      </Container>
+      <Nav />
+    </FlexContainer>
+  );
+};
 
 export default connect(Header);
 
@@ -24,7 +23,7 @@ const FlexContainer = styled.div`
   justify-content: space-around;
   width: 100%;
   box-shadow: 0 4px 6px -6px #222;
-`
+`;
 const Container = styled.div`
   box-sizing: border-box;
   padding: 24px;
@@ -36,12 +35,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   margin: 0;
-  font-family: 'Special Elite', cursive;
-`;
-
-const Description = styled.h4`
-  margin: 0;
-  color: black;
+  font-family: "Special Elite", cursive;
 `;
 
 const StyledLink = styled(Link)`

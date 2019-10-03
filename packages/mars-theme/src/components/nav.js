@@ -1,8 +1,8 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
-import GithubLogo from "../img/githubLogo.png";
-import LinkedinLogo from "../img/linkedinLogo.png";
+import GithubLogo from "../assets/githubLogo.png";
+import LinkedinLogo from "../assets/linkedinLogo.png";
 
 const Nav = ({ state }) => (
   <Container>
@@ -65,6 +65,3 @@ const Item = styled.div`
     }
   }
 `;
-
-  // background-image: url("https://image.flaticon.com/icons/svg/25/25231.svg");
-

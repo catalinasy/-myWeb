@@ -4,7 +4,7 @@ const settings = {
     "frontity": {
       "url": "https://test.frontity.io",
       "title": "Catalina Syddall",
-      "description": "Jr Software Developer"
+      "description": "Software Developer"
     }
   },
   "packages": [
@@ -26,22 +26,7 @@ const settings = {
             "showOnList": false,
             "showOnPost": false
           }
-        },
-        "content": {
-          "home": [
-            { title: 'Hello World!',
-            content: ""}
-           ],
-           "cv": [
-            { title: 'CV section title',
-            content: "CV section content"}
-           ],
-           "projects":[
-            { title: 'Projects section title',
-            content: "Projects section content"}
-           ]
         }
-       
       }
     },
     {
@@ -51,12 +36,12 @@ const settings = {
           "data":{
             "/": {
               is404: false,
-              isFetching: true,
+              isFetching: false,
               isReady: true
             },
             "/cv/": {
               is404: false,
-              isFetching: true,
+              isFetching: false,
               isReady: true
             }
           }
